@@ -3,4 +3,4 @@ project(Spring2018)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Spring2018 Ch6Warmup.cpp)
+add_executable(Spring2018 Ch6Warmup.cpp Person.cpp Person.h)
