@@ -1,6 +1,17 @@
 #include <iostream>
 #include "ItemToPurchase.h"
+#include "ShoppingCart.h"
+
 using namespace std;
+
+char printMenu(ShoppingCart &myCart){
+    char choice;
+
+    return choice;
+}
+
+
+
 
 int main() {
     ItemToPurchase item1, item2;
