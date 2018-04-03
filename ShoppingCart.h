@@ -35,9 +35,9 @@ public:
 
     int GetCostOfCart();
 
-    void PrintTotal() const;
+    void PrintTotal();
 
-    void PrintDescriptions() const;
+    void PrintDescriptions();
 
 
 };

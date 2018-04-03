@@ -2,6 +2,7 @@
 // Created by Will Smith on 3/15/18.
 //
 
+#include <iostream>
 #include "ShoppingCart.h"
 
 ShoppingCart::ShoppingCart(): customerName("none"),currentDate("January 1, 2016") {}
@@ -24,6 +25,13 @@ void ShoppingCart::AddItem(ItemToPurchase &item) {
 void ShoppingCart::RemoveItem(const string &itemName) {
     // Removes item from cartItems vector.
     // If item name cannot be found, output this message: Item not found in cart. Nothing removed.
+    for (int i = 0; i < cartItems.size() ; ++i) {
+        if (cartItems.at(i).GetName()==itemName){
+            cout<<"Found it!"<<endl;
+
+        }
+
+    }
 }
 
 void ShoppingCart::ModifyItem(ItemToPurchase &item) {
@@ -47,12 +55,12 @@ int ShoppingCart::GetCostOfCart() {
     return totalCost;
 }
 
-void ShoppingCart::PrintTotal() const {
+void ShoppingCart::PrintTotal()  {
     // Outputs total of objects in cart.
     // If cart is empty, output this message: SHOPPING CART IS EMPTY
 }
 
-void ShoppingCart::PrintDescriptions() const {
+void ShoppingCart::PrintDescriptions()  {
     // Outputs each item's description.
 }
 
