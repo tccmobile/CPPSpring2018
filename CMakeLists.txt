@@ -3,4 +3,4 @@ project(Spring2018)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Spring2018 Shape.cpp Shape.h Circle.cpp Circle.h Triangle.cpp Triangle.h Rectangle.cpp Rectangle.h Square.cpp Square.h ShapeTester.cpp Dodec.cpp Dodec.h)
+add_executable(Spring2018 mappingEx.cpp)
